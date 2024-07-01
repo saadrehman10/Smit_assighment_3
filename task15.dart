@@ -8,8 +8,6 @@ void main() {
       7 8 9 10
 
       ''');
-    
-  for (int i = 0; i < 10; i++) {
-    for (int j = rowNO ; 
-  }
+
+  for (int i = 0; i < 10; i++) {}
 }
