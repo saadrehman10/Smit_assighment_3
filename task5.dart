@@ -6,6 +6,9 @@ void main() {
         Input: 12345
         Output: Sum of digits: 15
     ''');
-
-    
+  int number = 12345, i = 1;
+  while (i > number.bitLength) {
+    print(i);
+    i++;
+  }
 }
