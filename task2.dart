@@ -5,12 +5,11 @@ void main() {
           Input: 10
           Output: 0 1 1 2 3 5 8''');
 
-  int number = 10;
-  for (int i = 0; i <= number; i++) {
-    if (i >= 1) {
-      print((i - 1).abs() + (i - 2).abs());
-    } else {
-      print(0);
-    }
+  int a = 0, b = 1 , n = 20;
+  while (a <= n) {
+    print(a);
+    int next = a + b;
+    a = b;
+    b = next;
   }
 }
