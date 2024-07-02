@@ -10,13 +10,18 @@ void main() {
       7 8 9 10
 
       ''');
+
   int row = 4;
-  for (int i = 0; i <= 10; i++) {
-    for (int j = row - 1; j >= row-1; j--) {
+  int num = 1; // Initialize the starting number
+  for (int i = 0; i < row; i++) {
+    // Print spaces before the numbers
+    for (int j = 0; j < row - i; j++) {
       stdout.write(' ');
     }
-    for (int k = 0; k <= row-1; k++) {
-      stdout.write('$i ');
+    // Print the numbers in the pyramid
+    for (int k = 0; k <= i; k++) {
+      stdout.write('$num ');
+      num++; // Increment the number for the next iteration
     }
     print('');
   }
